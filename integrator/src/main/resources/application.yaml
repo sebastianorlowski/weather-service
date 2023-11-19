@@ -1,0 +1,12 @@
+weather-api:
+  url: http://api.weatherapi.com/v1/
+  api-key: dbb45b4c2ca24405ba9125928231911
+
+rabbitmq:
+  uri: amqp://quest:quest@localhost:5672/
+  exchanges:
+    internal:
+  queues:
+    weather-integrator:
+  routing-keys:
+    internal-weather-integrator:
